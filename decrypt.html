@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrypt a Message</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-wrapper-2">
+    <header>
+      <h1 class="game-title">🔓 Decrypt a Word</h1>
+      <p class="game-subtitle">Solve the riddle to decode the message!</p>
+    </header>
+    <main>
+      <form id="decrypt-section">
+        <label for="encrypted-word">Select Encrypted Message:</label>
+        <select id="encrypted-messages-list">
+          <option value="">Select an encrypted message</option>
+        </select>
+
+        <p id="riddle-clue"><strong>Riddle:</strong> <span></span></p>
+        <p id="encrypted-text"><strong>Encrypted Text:</strong> <span></span></p>
+
+        <label for="guess">Your Guess:</label>
+        <input type="text" id="guess" placeholder="Enter your guess here" required>
+
+        <button id="decrypt-button" class="button">Submit Guess</button>
+        <button id="reset-button" class="button">Reset</button>
+      </form>
+      <p id="output"></p>
+      <a href="index.html" class="button">⬅️ Back to Main Page</a>
+    </main>
+  </div>
+  <script src="decrypt.js"></script>
+</body>
+</html>
